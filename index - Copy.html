@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiff Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header
+
+<button class="link-button" onclick="window.location.href='https://docs.google.com/presentation/d/1lqhXlot93_ElyAnNTefmMQWvE-kBNWVpqqB4uPHJ5cE/edit?usp=sharing';">
+   </button>
+
+    <h1 id="title">Cardiff – A School Presentation</h1>
+
+    <div class="language-toggle">
+        <button onclick="setLanguage('en')">The Presentation</button>
+          </div>
+</header>
+
+<section class="hero">
+   
+    <div class="hero-content">
+        <h2 id="hero-title">Welcome to Cardiff</h2>
+        <p id="hero-text">The capital city of Wales, full of history, culture, and amazing places.</p>
+    </div>
+</section>
+
+<section class="presentation">
+    <h2 id="presentation-title">Presentation</h2>
+    <p id="presentation-text">
+        Cardiff is the largest city in Wales and one of the most interesting places in the UK.
+        It has a mix of old and new, from ancient castles to modern waterfronts.
+        In this project, I will show some of the most important places in Cardiff.
+    </p>
+</section>
+
+<section class="places">
+    <h2 id="places-title">Important Places in Cardiff</h2>
+
+    <div class="card">
+        <h3 id="castle-title">Cardiff Castle</h3>
+
+            A historic castle in the centre of the city, with over 2,000 years of history.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3 id="bay-title">Cardiff Bay</h3>
+        "Cardiff Bay">
+        <p id="bay-text">
+            A modern waterfront area with restaurants, the Senedd, and beautiful views.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3 id="bute-title">Bute Park</h3>
+        
+            One of the biggest urban parks in the UK, perfect for walking and relaxing.
+        </p>
+    </div>
+</section>
+
+<section class="credits">
+    <h2 id="credits-title">Credits</h2>
+    <p id="credits-text">
+        Arshiya - Project Lead.<br>
+        Cassius - Helper.<br>
+        Paulos - Helper
+    </p>
+</section>
+
+<footer>
+    <p id="footer-text">School Project for Wales – Cardiff Presentation</p>
+</footer>
+
+<script>
+    const translations = {
+        en: {
+            "title": "Cardiff – A School Presentation",
+            "hero-title": "Welcome to Cardiff",
+            "hero-text": "The capital city of Wales, full of history, culture, and amazing places.",
+            "presentation-title": "Presentation",
+            "presentation-text": "Cardiff is the largest city in Wales and one of the most interesting places in the UK. It has a mix of old and new, from ancient castles to modern waterfronts. In this project, I will show some of the most important places in Cardiff.",
+            "places-title": "Important Places in Cardiff",
+            "castle-title": "Cardiff Castle",
+            "castle-text": "A historic castle in the centre of the city, with over 2,000 years of history.",
+            "bay-title": "Cardiff Bay",
+            "bay-text": "A modern waterfront area with restaurants, the Senedd, and beautiful views.",
+            "bute-title": "Bute Park",
+            "bute-text": "One of the biggest urban parks in the UK, perfect for walking and relaxing.",
+            "credits-title": "Credits",
+            "credits-text": "Website created for a school project about Cardiff.<br>Photos from Wikimedia Commons.<br>Video: Cardiff Bay (local file added by student).",
+            "footer-text": "© School Project – Cardiff Presentation"
+        },
+        cy: {
+            "title": "Caerdydd – Prosiect Ysgol",
+            "hero-title": "Croeso i Gaerdydd",
+            "hero-text": "Prifddinas Cymru, yn llawn hanes, diwylliant a llefydd anhygoel.",
+            "presentation-title": "Cyflwyniad",
+            "presentation-text": "Caerdydd yw'r ddinas fwyaf yng Nghymru ac un o'r llefydd mwyaf diddorol yn y DU. Mae'n gymysgedd o hen a newydd, o gestyll hynafol i ardaloedd glan-dŵr modern. Yn y prosiect hwn, byddaf yn dangos rhai o'r llefydd pwysicaf yng Nghaerdydd.",
+            "places-title": "Llefydd Pwysig yng Nghaerdydd",
+            "castle-title": "Castell Caerdydd",
+            "castle-text": "Castell hanesyddol yng nghanol y ddinas, gyda dros 2,000 o flynyddoedd o hanes.",
+            "bay-title": "Bae Caerdydd",
+            "bay-text": "Ardal glan-dŵr fodern gyda bwytai, y Senedd, a golygfeydd hardd.",
+            "bute-title": "Parc Bute",
+            "bute-text": "Un o'r parciau trefol mwyaf yn y DU, yn berffaith ar gyfer cerdded ac ymlacio.",
+            "credits-title": "Diolchiadau",
+            "credits-text": "Gwefan wedi'i chreu ar gyfer prosiect ysgol am Gaerdydd.<br>Lluniau o Wikimedia Commons.<br>Fideo: Bae Caerdydd (ffeil leol gan y myfyriwr).",
+            "footer-text": "© Prosiect Ysgol – Cyflwyniad Caerdydd"
+        }
+    };
+
+    function setLanguage(lang) {
+        for (const id in translations[lang]) {
+            document.getElementById(id).innerHTML = translations[lang][id];
+        }
+    }
+</script>
+
+</body>
+</html>

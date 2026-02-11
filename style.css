@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Global colours */
+body {
+    background: black;
+    color: yellow;
+}
+
+/* Header */
+header {
+    background: black;
+    color: yellow;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-toggle button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.language-toggle button:hover {
+    background: #fff176;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: yellow;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(40%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Presentation */
+.presentation {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Places */
+.places {
+    padding: 30px;
+    text-align: center;
+}
+
+.card {
+    background: #111;
+    color: yellow;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(
