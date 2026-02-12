@@ -14,10 +14,13 @@ header {
 }
 
 .header-image {
-    width: 50%;
-    max-height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 10px;
     display: block;
+    margin: 10px auto;
+}
 }
 
 .language-toggle button {
@@ -77,4 +80,5 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 
