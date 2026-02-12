@@ -12,15 +12,6 @@ header {
     color: white;
     padding-bottom: 20px;
 }
-
-.header-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    margin: 10px auto;
-}
 }
 
 .language-toggle button {
@@ -80,5 +71,6 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 
 
